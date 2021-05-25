@@ -1,0 +1,279 @@
+
+* {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	font-family: Tinos;
+}
+
+h1, h2, h3, h4, p, span {
+	cursor: default;
+}
+
+header {
+	color: #CD0000;
+	font-family: font-family: 'Sura', serif;
+	margin-left: 27px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+h2 {
+	transition: 0.5s ease-in-out;
+	color: #CD0000;
+	margin-left: 10px;
+	padding-bottom: 10px;
+	border-bottom: solid;
+	min-width: 40vw;
+}
+
+h2:hover {
+	transition: 0.2s ease-in-out;
+	background-color: #CD0000;
+	color: #FFF;
+	border-color: #FFF;
+	cursor: pointer;
+}
+
+footer {
+	height: 30px;
+	background-color: #CD0000;
+}
+
+.d {
+	font-size: 40px;
+}
+
+.hidden {
+	display: none;
+}
+
+#column-wrapper {
+	display: grid;
+	grid-template-columns: 49% 49%;
+	grid-gap: 15px;
+	min-height: 82vh;
+	margin-bottom: 20px;
+}
+
+#left-column {
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+
+#right-column {
+	grid-column-start: 2;
+	grid-column-end: 2;
+	margin-top: 30px;
+}
+
+.portrait {
+	height: 160px;
+	width: 90px;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: 50% 0%;
+  	border: solid 1px #000;
+}
+
+.npc {
+	display: grid;
+	grid-template-rows: 14px, auto;
+	grid-template-columns: 80px, auto, 18px;
+	border-bottom: solid 1px #000;
+	margin-left: 5px;
+	margin-top: 5px;
+	padding-bottom: 5px;
+	width: 40vw;
+}
+
+
+.npc-img-div {
+	grid-column-start: 1;
+	grid-row-start: 1;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 15px;
+}
+
+.npc-text {
+	grid-column-start: 2;
+	grid-row-start: 1;
+	margin-left: 5px;
+}
+
+.npc-text span {
+	display: block;
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+.toggle {
+	grid-column-start: 3;
+	grid-row-start: 1;
+	text-align: right;
+	margin-right: 5px;
+	width: max-content;
+	height: max-content;
+	margin-left: auto;
+	font-size: 24px;
+	color: #CD0000;
+}
+
+.toggle:hover {
+	cursor: pointer!important;
+}
+
+.list {
+	float: inline-end;
+	text-align: right;
+	margin-right: 5px;
+	width: max-content;
+	height: max-content;
+	margin-left: auto;
+	font-size: 24px;
+	color: #CD0000;
+}
+
+.list:hover {
+	cursor: pointer!important;
+}
+
+.label {
+	font-weight: bold;
+	padding: 5px;
+	color: #CD0000;
+}
+
+.family-list {
+	padding: 5px;
+	width: max-content;
+	margin-left: 15px;
+}
+
+.saved-character-list {
+	margin-top: 10px;
+	margin-right: 20px;
+	float: right;
+	width: 90%;
+	font-size: 12px;
+	border: 1px solid #CD0000;
+}
+
+.saved-character-list h4 {
+	background-color: #CD0000;
+	padding: 3px;
+	color: #FFF;
+	padding-left: 5px;
+}
+
+.saved-character-list p {
+	padding-left: 5px;
+}
+
+.bin {
+	color: #FFF;
+	float: right;
+	margin-right: 3px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	width: max-content;
+	transition: 0.4s;
+}
+
+.bin:hover {
+	cursor: pointer;
+	background-color: #FFF;
+	color: #CD0000;
+	border-radius: 2px;
+	transition: 0.4s;
+}
+
+#search {
+	margin-left: 30px;
+	width: 240px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+}
+
+#searchButton {
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	border-radius: 0px;
+	background-color: #CD0000;
+	border-color: #CD0000;
+	padding: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: bold;
+	font-family: 'Sura';
+	color: #FFF;
+	cursor: pointer;
+}
+
+#searchButton:hover {
+	background-color: #900;
+}
+
+.search-list {
+	position: absolute;
+	width: 80%;
+	margin-left: 10%;
+	border: solid 5px #CD0000;
+	background-color: #FFF;
+	padding: 10px;
+}
+
+.search-list p {
+	width: 80%;
+	display: inline-block;
+}
+
+.close-cross {
+	color: #CD0000;
+	position: absolute;
+	display: inline-block;
+	width: auto;
+	right: 5px;
+	top: 5px;
+	cursor: pointer;
+}
+
+.close-cross:hover {
+	color: #900;
+}
+
+#map {
+	width: 405px;
+	height: 280px;
+	display: inline-block;
+	margin-left: 20px;
+	background-image: url(../img/map.jpg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#icon {
+	display: inline-block;
+	width: 32px;
+	height: 20px;
+	padding: 2px;
+	border: solid 1px #CD0000;
+	color: #CD0000;
+	background: none;
+	margin-left: 22px;
+	margin-top: 10px;
+	text-align: center;
+	font-family: sans-serif;
+	cursor: pointer;
+}
+
+#icon::after {
+	content: 'Map';
+}
